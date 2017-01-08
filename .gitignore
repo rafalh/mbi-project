@@ -1,0 +1,9 @@
+# Output directory
+/target
+
+# IDE
+.idea
+*.iml
+
+# User defined envirnoment vars
+env.sh
