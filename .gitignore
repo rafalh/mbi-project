@@ -7,3 +7,6 @@
 
 # User defined envirnoment vars
 env.sh
+
+# huge binary data downloaded by user
+local-data

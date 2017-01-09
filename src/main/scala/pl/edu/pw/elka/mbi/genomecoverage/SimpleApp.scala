@@ -1,12 +1,6 @@
-/* SimpleApp.scala */
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
-import org.apache.spark.SparkConf
+package pl.edu.pw.elka.mbi.genomecoverage
 
-/* SimpleApp.scala */
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
-import org.apache.spark.SparkConf
+import org.apache.spark.{SparkConf, SparkContext}
 
 object SimpleApp {
   def main(args: Array[String]) {

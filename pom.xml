@@ -59,5 +59,10 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.seqdoop</groupId>
+            <artifactId>hadoop-bam</artifactId>
+            <version>7.7.1</version>
+        </dependency>
     </dependencies>
 </project>
