@@ -2,7 +2,7 @@
 
 . env.sh
 
-JAR_PATH="target/mbi-project-1.0-SNAPSHOT.jar"
+JAR_PATH="target/genome-coverage-1.0-SNAPSHOT-jar-with-dependencies.jar"
 MAIN_CLASS="pl.edu.pw.elka.mbi.genomecoverage.App"
 MASTER="local[*]"
 
