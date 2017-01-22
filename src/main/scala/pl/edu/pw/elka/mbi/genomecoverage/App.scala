@@ -6,7 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 object App {
 
   def main(args: Array[String]) {
-    val bedFile = "local-data/20130108.exome.targets-edited.bed"
+    val bedFile = "src/test/resources/test.bed"
     val bamFile = "local-data/HG00096.chrom20.ILLUMINA.bwa.GBR.exome.20120522.bam"
 
     val conf = new SparkConf()

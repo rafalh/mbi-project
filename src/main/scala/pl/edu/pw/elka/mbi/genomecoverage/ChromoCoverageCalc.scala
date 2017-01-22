@@ -15,7 +15,7 @@ object ChromoCoverageCalc {
     if (str.startsWith("chr")) {
       str.substring(3)
     } else {
-      throw new RuntimeException(s"unknown chromosome string $str")
+      throw new UnsupportedOperationException(s"unknown chromosome string $str")
     }
   }
 
