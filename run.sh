@@ -7,4 +7,4 @@ MAIN_CLASS="pl.edu.pw.elka.mbi.genomecoverage.App"
 MASTER="local[*]"
 
 #mvn package
-"$SPARK_HOME/bin/spark-submit" --class "$MAIN_CLASS" --master "$MASTER" "$JAR_PATH"
+"$SPARK_HOME/bin/spark-submit" --class "$MAIN_CLASS" --master "$MASTER" "$JAR_PATH" "$1" "$2" "$3"

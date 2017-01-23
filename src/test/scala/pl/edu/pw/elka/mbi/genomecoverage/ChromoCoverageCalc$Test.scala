@@ -47,8 +47,8 @@ class ChromoCoverageCalc$Test extends FunSuite with SharedSparkContext {
       sum = 200,
       min = 0,
       max = 3,
-      mean = 1.0,
-      stdDev = 0.0
+      mean = 1.639344262295082,
+      stdDev = 0.5442030384491091
     ))
   }
 

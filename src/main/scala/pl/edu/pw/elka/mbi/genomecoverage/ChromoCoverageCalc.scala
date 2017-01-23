@@ -72,7 +72,8 @@ object ChromoCoverageCalc {
         // calculate interesting results
         val depths = pair._2
         val sum = depths.sum
-        val mean = sum / depths.length
+        val mean: Double = (sum.toDouble / depths.length)
+        val stdDev: Double = Math.sqrt(depths.map(_ - mean).map(t => t * t).sum / depths.length)
         (pair._1, new RegionResults(
           // Can we do it better? RDD has needed methods...
           length = depths.length,
@@ -80,7 +81,7 @@ object ChromoCoverageCalc {
           min = depths.min,
           max = depths.max,
           mean = mean,
-          stdDev = Math.sqrt(depths.map(_ - mean).map(t => t * t).sum / depths.length)))
+          stdDev = stdDev))
       })
   }
 
