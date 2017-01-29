@@ -11,6 +11,8 @@ object ChromoCoverageCalc {
 
   private[this] val logger = Logger.getLogger(getClass)
 
+  private[this] val BED_PARTITIONS = 8
+
   def parseChromo(str: String): String = {
     if (str.startsWith("chr")) {
       str.substring(3)
@@ -20,7 +22,7 @@ object ChromoCoverageCalc {
   }
 
   def loadBed(path: String, sc: SparkContext): RDD[ChromoRegion] = {
-    sc.textFile(path)
+    sc.textFile(path, BED_PARTITIONS)
       .map(line => line.split("\t"))
       .map(fields => new ChromoRegion(parseChromo(fields(0)), Integer.valueOf(fields(1)), Integer.valueOf(fields(2))))
   }

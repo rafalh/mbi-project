@@ -12,7 +12,7 @@ object App {
 
       val conf = new SparkConf()
         .setAppName("Genome Coverage Application")
-        .setMaster("local[*]")
+        //.setMaster("local[*]")
         .registerKryoClasses(Array(classOf[LongWritable]))
       val sc = new SparkContext(conf)
 
