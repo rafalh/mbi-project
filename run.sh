@@ -6,5 +6,5 @@ JAR_PATH="target/genome-coverage-1.0-SNAPSHOT-jar-with-dependencies.jar"
 MAIN_CLASS="pl.edu.pw.elka.mbi.genomecoverage.App"
 MASTER="local[*]"
 
-#mvn package
-"$SPARK_HOME/bin/spark-submit" --class "$MAIN_CLASS" --master "$MASTER" "$JAR_PATH" "$1" "$2" "$3"
+#mvn package -DskipTests=true
+"$SPARK_HOME/bin/spark-submit" --class "$MAIN_CLASS" --master "$MASTER" "$JAR_PATH" $@
