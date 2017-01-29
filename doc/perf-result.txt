@@ -1,0 +1,10 @@
+CPU=Intel i7 4770
+
+MASTER		lpart=12	lpart=48
+local[1]	4m41.769s	4m41.823s
+local[2]	2m24.806s	2m24.877s
+local[3]	1m49.170s	1m47.829s
+local[4]	1m27.889s	1m24.220s
+local[6]	1m11.142s	1m9.155s
+local[8]	1m12.526s	1m3.467s
+
